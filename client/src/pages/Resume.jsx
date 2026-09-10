@@ -16,7 +16,7 @@ function Resume() {
   const fetchResume = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/resume"
+        "https://mern-portfolio-1-1mi2.onrender.com/api/resume"
       );
 
       setResume(res.data);
@@ -44,7 +44,7 @@ function Resume() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/resume/upload",
+        "https://mern-portfolio-1-1mi2.onrender.com/api/resume/upload",
         formData,
         {
           headers: {
@@ -79,7 +79,7 @@ function Resume() {
           className="btn btn-primary"
           onClick={() =>
             window.open(
-              `http://localhost:5000/${resume.filepath}`,
+              `https://mern-portfolio-1-1mi2.onrender.com/${resume.filepath}`,
               "_blank"
             )
           }

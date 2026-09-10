@@ -15,7 +15,7 @@ function Home() {
   const fetchHome = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/home"
+              "https://mern-portfolio-1-1mi2.onrender.com/api/home"
       );
 
       setHome(res.data);
@@ -35,7 +35,7 @@ function Home() {
       }
 
       await axios.put(
-        "http://localhost:5000/api/home",
+        "https://mern-portfolio-1-1mi2.onrender.com/api/home",
         home,
         {
           headers: {
