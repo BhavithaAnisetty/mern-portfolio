@@ -29,7 +29,7 @@ function Admin() {
 
     try {
       await axios.post(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/projects",
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/projects",
         project,
         {
           headers: {

@@ -22,7 +22,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/auth/login",
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/auth/login",
         formData
       );
 

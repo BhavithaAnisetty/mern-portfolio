@@ -20,7 +20,7 @@ function Certifications() {
   const fetchCertificates = async () => {
     try {
       const res = await axios.get(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/certificates"
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/certificates"
       );
 
       setCertificates(res.data);
@@ -40,7 +40,7 @@ function Certifications() {
       }
 
       await axios.post(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/certificates",
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/certificates",
         newCertificate,
         {
           headers: {
@@ -79,7 +79,7 @@ function Certifications() {
       }
 
       await axios.delete(
-        `https://mern-portfolio-1-1mi2.onrender.com/api/certificates/${id}`,
+        `https://mern-portfolio-backend-kwz8.onrender.com/api/certificates/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

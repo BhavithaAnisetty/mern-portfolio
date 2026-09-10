@@ -21,7 +21,7 @@ function Profiles() {
   const fetchProfiles = async () => {
     try {
       const res = await axios.get(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/profiles"
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/profiles"
       );
 
       setProfiles(res.data);
@@ -41,7 +41,7 @@ function Profiles() {
       }
 
       await axios.post(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/profiles",
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/profiles",
         newProfile,
         {
           headers: {
@@ -80,7 +80,7 @@ function Profiles() {
       }
 
       await axios.put(
-        `https://mern-portfolio-1-1mi2.onrender.com/api/profiles/${profile._id}`,
+        `https://mern-portfolio-backend-kwz8.onrender.com/api/profiles/${profile._id}`,
         profile,
         {
           headers: {
@@ -114,7 +114,7 @@ function Profiles() {
       }
 
       await axios.delete(
-        `https://mern-portfolio-1-1mi2.onrender.com/api/profiles/${id}`,
+        `https://mern-portfolio-backend-kwz8.onrender.com/api/profiles/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

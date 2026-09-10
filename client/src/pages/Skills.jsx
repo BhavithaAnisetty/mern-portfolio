@@ -15,7 +15,7 @@ function Skills() {
   const fetchSkills = async () => {
     try {
       const res = await axios.get(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/skills"
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/skills"
       );
 
       setSkillData(res.data);
@@ -35,7 +35,7 @@ function Skills() {
       }
 
       await axios.put(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/skills",
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/skills",
         {
           skills: skillData.skills,
         },

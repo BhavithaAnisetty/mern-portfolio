@@ -22,7 +22,7 @@ function Projects() {
   const fetchProjects = async () => {
     try {
       const res = await axios.get(
-        "https://mern-portfolio-1-1mi2.onrender.com/api/projects"
+        "https://mern-portfolio-backend-kwz8.onrender.com/api/projects"
       );
 
       setProjects(res.data);
@@ -41,7 +41,7 @@ function Projects() {
     }
 
     const response = await axios.post(
-      "https://mern-portfolio-1-1mi2.onrender.com/api/projects",
+      "https://mern-portfolio-backend-kwz8.onrender.com/api/projects",
       newProject,
       {
         headers: {
@@ -83,7 +83,7 @@ function Projects() {
     const token = localStorage.getItem("token");
 
     await axios.delete(
-      `https://mern-portfolio-1-1mi2.onrender.com/api/projects/${id}`,
+      `https://mern-portfolio-backend-kwz8.onrender.com/api/projects/${id}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -101,7 +101,7 @@ function Projects() {
     const token = localStorage.getItem("token");
 
     await axios.put(
-      `https://mern-portfolio-1-1mi2.onrender.com/${project._id}`,
+      `https://mern-portfolio-backend-kwz8.onrender.com/api/projects/${project._id}`,
       project,
       {
         headers: {
